@@ -18,7 +18,7 @@ This project uses DCGAN to implement gray image colorization. The network copys 
 	* Add the `~/caffe_GAN/caffe_GAN/gan_example/lib/layers` path to `$PYTHONPATH` 
 2. Building the dataset:
 	* Download [Labeled Faces in the Wild](http://vis-www.cs.umass.edu/lfw/) and extract it somewhere
-	* In `gan_example/` run `python lib/utils/generate_dataset.py --path="lfw"`, where `lfw` is the path to your LFW dataset
+	* In `gan_example/` run `mkdir out_unaug_64x64 ` and run `python lib/utils/generate_dataset.py --path="lfw"`, where `lfw` is the path to your LFW dataset
 	* Generate the train.txt file:
 	* In `out_unaug_64x64/` run `ls -1 > ../train.txt`
 3. Train
