@@ -1,1 +1,1 @@
-../caffe-master/build/tools/caffe train --solver model/solver.prototxt 
+../build/tools/caffe train --solver model/solver.prototxt 
