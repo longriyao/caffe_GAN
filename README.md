@@ -1,5 +1,5 @@
-##Deep Convolutional Generative Adversarial Nerworks with caffe implementation
-This project uses GAN to implement gray image colorization. The network copys from  [ aleju/colorizer.](https://github.com/aleju/colorizer) 
+##Deep Convolutional Generative Adversarial Nerworks with Caffe Implementation
+This project uses DCGAN to implement gray image colorization. The network copys from  [ aleju/colorizer.](https://github.com/aleju/colorizer) 
 ##Changed Files:
     caffe.proto:
     	Add the new line:
@@ -13,8 +13,9 @@ This project uses GAN to implement gray image colorization. The network copys fr
 
     		
 ##Usage:
-1. The Installation completely the same as [Caffe](http://caffe.berkeleyvision.org/). Please follow the [installation instructions](http://caffe.berkeleyvision.org/installation.html). Make sure you uncomment WITH_PYTHON_LAYER := 1 to support for python layer.
-	add the caffe_GAN/caffe_GAN/gan_example/lib/layers path to $PYTHONPAT
+1. The Installation completely the same as [Caffe](http://caffe.berkeleyvision.org/). Please follow the [installation instructions](http://caffe.berkeleyvision.org/installation.html). 
+	* Make sure you uncomment `WITH_PYTHON_LAYER := 1` to support for python layer.
+	* Add the `caffe_GAN/caffe_GAN/gan_example/lib/layers` path to `$PYTHONPATH`
 2. Building the dataset:
 	* Download [Labeled Faces in the Wild](http://vis-www.cs.umass.edu/lfw/) and extract it somewhere
 	* In `gan_example/` run `python lib/utils/generate_dataset.py --path="lfw"`, where `lfw` is the path to your LFW dataset
