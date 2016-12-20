@@ -22,6 +22,6 @@ This project uses DCGAN to implement gray image colorization. The network copys 
 	* Generate the train.txt file:
 	* In `out_unaug_64x64/` run `ls -1 > ../train.txt`
 3. Train
-	* `gan_example/` run `./train.sh` begin training
-	
+	* `gan_example/` run `./train.sh` begin training.
+4. The generate images will be putted in `output` directory.	
 
