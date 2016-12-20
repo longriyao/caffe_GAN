@@ -14,8 +14,8 @@ This project uses DCGAN to implement gray image colorization. The network copys 
     		
 ##Usage:
 1. The Installation completely the same as [Caffe](http://caffe.berkeleyvision.org/). Please follow the [installation instructions](http://caffe.berkeleyvision.org/installation.html). 
-	* Make sure you uncomment `WITH_PYTHON_LAYER := 1` to support for python layer.
-	* Add the `caffe_GAN/caffe_GAN/gan_example/lib/layers` path to `$PYTHONPATH`
+	* Make sure you uncomment `WITH_PYTHON_LAYER := 1` to support for python layer. And don't forget `make pycaffe` 
+	* Add the `~/caffe_GAN/caffe_GAN/gan_example/lib/layers` path to `$PYTHONPATH` 
 2. Building the dataset:
 	* Download [Labeled Faces in the Wild](http://vis-www.cs.umass.edu/lfw/) and extract it somewhere
 	* In `gan_example/` run `python lib/utils/generate_dataset.py --path="lfw"`, where `lfw` is the path to your LFW dataset
