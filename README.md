@@ -1,6 +1,7 @@
-##Deep Convolutional Generative Adversarial Nerworks with Caffe Implementation
+## Deep Convolutional Generative Adversarial Nerworks with Caffe Implementation
+
 This project uses DCGAN to implement gray image colorization. The network copys from  [ aleju/colorizer.](https://github.com/aleju/colorizer) 
-##Changed Files:
+## Changed Files:
     caffe.proto:
     	Add the new line:
     		  optional bool param_propagate_down = 6;
@@ -12,7 +13,7 @@ This project uses DCGAN to implement gray image colorization. The network copys 
       		}
 
     		
-##Usage:
+## Usage:
 1. The Installation completely the same as [Caffe](http://caffe.berkeleyvision.org/). Please follow the [installation instructions](http://caffe.berkeleyvision.org/installation.html). 
 	* Make sure you uncomment `WITH_PYTHON_LAYER := 1` to support for python layer. And don't forget `make pycaffe` 
 	* Add the `~/caffe_GAN/caffe_GAN/gan_example/lib/layers` path to `$PYTHONPATH` 
